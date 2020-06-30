@@ -20,7 +20,7 @@ Object $paramName){
            this.#addPrimitiveFieldComparisonConditionDirect($field) ##
          #end
       #elseif ($field.enum)
-         #addPrimitiveFieldComparisonConditionDirect($field) ##
+         this.#addPrimitiveFieldComparisonConditionDirect($field) ##
       #else
 com.google.common.base.Objects.equal(this.$field.accessor, ${classInstanceName}.$field.accessor)##
      #end
